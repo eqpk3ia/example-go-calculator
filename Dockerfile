@@ -21,7 +21,7 @@
 
 # GLOBAL ARG values
 # @see https://github.com/moby/moby/issues/37345
-ARG PROJECT_PATH="github.com/jbariel/example-go-calculator"
+ARG PROJECT_PATH="github.com/eqpk3ia/example-go-calculator"
 ARG OUT_FILE_NAME=app
 
 # @see https://hub.docker.com/_/golang
@@ -37,7 +37,7 @@ RUN ./scripts/build.sh './calculator'
 FROM alpine:latest
 ARG PROJECT_PATH
 ARG OUT_FILE_NAME
-# ||| jbariel TODO => try to get this working with env vars
+# ||| eqpk3ia TODO => try to get this working with env vars
 # ENV OUT_FILE_NAME=${OUT_FILE_NAME}
 # if you have to modify ${OUT_FILE_NAME} update this manually
 # There are some oddities about passing params to `sh -c` commands

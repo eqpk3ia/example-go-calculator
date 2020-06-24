@@ -1,3 +1,3 @@
-module github.com/jbariel/example-go-calculator
+module github.com/eqpk3ia/example-go-calculator
 
 go 1.14
